@@ -52,6 +52,9 @@
       line-height: 1;
       opacity: 0.10000000149011612; }
 
+  .article-2 {
+    flex-direction: column-reverse; }
+
   .article__2 {
     position: relative;
     margin-left: 0; }
