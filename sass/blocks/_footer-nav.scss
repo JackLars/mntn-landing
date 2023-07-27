@@ -1,0 +1,28 @@
+.footer__nav {
+    display: flex;
+    column-gap: 212px;
+
+    h3 {
+        padding-bottom: 24px;
+        font-size: 24px;
+        line-height: 1.333;
+        color: $accent-color;
+    }
+
+    li {
+        padding-bottom: 16px;
+        font-weight: 500;
+        line-height: 1.777;
+    }
+
+    li:last-child {
+        padding-bottom: 0;
+    }
+
+    li:hover {
+        color: $accent-color;
+        transition: color 0.2s ease-in;
+    }
+
+
+}

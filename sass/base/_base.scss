@@ -1,0 +1,35 @@
+html, body {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.222;
+    color: #fff;
+}
+
+body {
+    max-width: 1920;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #0B1D26;
+    background-image: url("./../img/bg/bg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.container {
+    width: 1492px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+svg {
+    fill: white;
+}

@@ -1,0 +1,26 @@
+.footer {
+    padding-bottom: 120px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+
+    .logo {
+        padding-bottom: 24px;
+    }
+
+    &--text {
+        padding-bottom: 140px;
+        width: 303px;
+    }
+
+    .copyright {
+        line-height: 1.777;
+        font-weight: 500;
+        opacity: 0.5;
+    }
+}

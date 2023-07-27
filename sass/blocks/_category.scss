@@ -1,0 +1,25 @@
+.category {
+    position: relative;
+    padding-left: 104px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    &::before{
+        display: block;
+        position: absolute;
+
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 72px;
+        height: 2px;
+        background-color: $accent-color;
+    }
+}
+
+.link--button {
+    display: flex;
+    column-gap: 16px;
+}

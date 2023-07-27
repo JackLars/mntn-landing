@@ -1,0 +1,60 @@
+.header {
+    padding-bottom: 1160px; //843px
+}
+
+.nav {
+    padding-top: 64px;
+    padding-bottom: 198px; //198px
+
+    a:hover {
+        color: $accent-color;
+        transition: color 0.2s ease-in;
+    }
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1790px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    font-family: 'Chronicle Display';
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navigation {
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.account {
+    display: flex;
+    column-gap: 8px;
+
+    font-size: 17px;
+
+
+
+    p {
+        margin-top: 3px;
+    }
+}

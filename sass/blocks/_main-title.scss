@@ -1,0 +1,31 @@
+.main__title {
+    display: block;
+    margin: auto;
+
+    max-width: 950px;
+
+    h1 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        font-family: 'Chronicle';
+        font-size: 88px;
+        font-weight: 600;
+        line-height: 1.136;
+        color: #fff;
+        text-transform: capitalize;
+    }
+}
+
+.main__title:hover {
+
+    p {
+        color: $accent-color;
+        transition: color 0.2s ease-in;
+    }
+
+    svg {
+        fill: $accent-color;
+        transition: fill 0.2s ease-in;
+    }
+
+}

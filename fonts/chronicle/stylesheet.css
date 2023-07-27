@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Chronicle';
+    src: url('./Chronicle\ Display\ Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('./Chronicle\ Display\ Semibold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('./Chronicle\ Display\ Roman.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
