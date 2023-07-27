@@ -1,9 +1,12 @@
 @media (max-width: 800px) {
   .header {
-    padding-bottom: 860px; }
+    padding-bottom: 560px; }
 
   .navigation, .account {
     display: none; }
+
+  .category {
+    font-size: 14px; }
 
   .nav__button {
     display: block; }
@@ -17,12 +20,14 @@
   .tips__article--container {
     flex-direction: column; }
   .tips__article--text {
+    display: block;
+    width: 30%;
     margin-top: 100px; }
     .tips__article--text h1 {
       margin-top: 27px;
       margin-bottom: 27px;
       font-family: 'Chronicle';
-      font-size: 44px;
+      font-size: 40px;
       font-weight: 600;
       line-height: normal; }
     .tips__article--text p {
@@ -30,7 +35,9 @@
       .tips__article--text p.article--text {
         margin-bottom: 27px; }
   .tips__article img {
-    width: 50%; }
+    display: block;
+    padding-top: 20px;
+    width: 29%; }
 
   .article__1, .article__3 {
     margin-left: 0;

@@ -1,11 +1,19 @@
 @media (max-width: 800px) {
 
     .header {
-        padding-bottom: 860px;
+        padding-bottom: 560px;
     }
 
     .navigation, .account {
         display: none;
+    }
+
+    .category {
+        font-size: 14px;
+    }
+
+    .link-button {
+        
     }
 
     .nav__button {
@@ -29,6 +37,8 @@
         }
 
         &--text {
+            display: block;
+            width: 30%;
             margin-top: 100px;
 
             h1 {
@@ -36,7 +46,7 @@
                 margin-bottom: 27px;
 
                 font-family: 'Chronicle';
-                font-size: 44px;
+                font-size: 40px;
                 font-weight: 600;
                 line-height: normal;
             }
@@ -50,7 +60,9 @@
         }
 
         img {
-            width: 50%;
+            display: block;
+            padding-top: 20px;
+            width: 29%;
         }
     }
 
