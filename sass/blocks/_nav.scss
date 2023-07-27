@@ -23,6 +23,13 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    a:hover {
+        svg {
+            fill: $accent-color;
+            transition: fill 0.2s ease-in;
+        }
+    }
 }
 
 .logo {

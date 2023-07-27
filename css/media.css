@@ -1,0 +1,17 @@
+@media (max-width: 800px) {
+  body {
+    background-size: auto; }
+
+  .navigation, .account {
+    display: none; }
+
+  .nav__button {
+    display: block; }
+
+  .mobile__nav--active {
+    display: flex; }
+
+  .main__title h1 {
+    font-size: 55px; } }
+
+/*# sourceMappingURL=media.css.map */

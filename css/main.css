@@ -93,6 +93,10 @@ svg {
   padding-left: 15px;
   padding-right: 15px;
 }
+.nav__row a:hover svg {
+  fill: #FBD784;
+  transition: fill 0.2s ease-in;
+}
 
 .logo {
   font-family: 'Chronicle Display';
@@ -195,7 +199,7 @@ main .container {
 
 .tips__article--text {
   display: block;
-  width: 632px;
+  max-width: 632px;
   margin-top: 141px;
 }
 .tips__article--text h1 {
@@ -213,11 +217,11 @@ main .container {
   margin-bottom: 27px;
 }
 
-.article__1 {
+.article__1, .article__3 {
   margin-left: 150px;
   margin-right: 114px;
 }
-.article__1 .article__number {
+.article__1 .article__number, .article__3 .article__number {
   position: absolute;
   top: 38px;
   left: 0;
@@ -285,6 +289,81 @@ main .container {
 .footer__nav li:hover {
   color: #FBD784;
   transition: color 0.2s ease-in;
+}
+
+.nav__button {
+  position: relative;
+  z-index: 9;
+  display: none;
+  padding: 0;
+  height: 25px;
+  border: none;
+}
+
+.nav__button--open {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+}
+.nav__button--open::before {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+.nav__button--open::after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.nav__button--close .nav__button--open {
+  background-color: transparent;
+}
+.nav__button--close .nav__button--open::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.nav__button--close .nav__button--open::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.mobile__nav {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  padding: 70px 70px 50px 30px;
+  width: 320px;
+  height: 100%;
+  background-color: rgba(11, 29, 38, 0.8);
+}
+.mobile__nav .navigation, .mobile__nav .account {
+  display: block;
+}
+.mobile__nav ul {
+  flex-direction: column;
+}
+.mobile__nav ul li {
+  margin-bottom: 20px;
+}
+.mobile__nav .account {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */

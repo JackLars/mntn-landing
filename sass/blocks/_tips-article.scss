@@ -39,7 +39,7 @@ main {
 
 .tips__article--text {
     display: block;
-    width: 632px;
+    max-width: 632px;
 
     margin-top: 141px;
 
@@ -61,7 +61,7 @@ main {
     }
 }
 
-.article__1 {
+.article__1, .article__3 {
     margin-left: 150px;
     margin-right: 114px;
 

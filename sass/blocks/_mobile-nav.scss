@@ -1,0 +1,90 @@
+.nav__button {
+    position: relative;
+    z-index: 9;
+    display: none;
+    padding: 0;
+    height: 25px;
+    border: none;
+}
+
+.nav__button--open {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+
+    &::before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        
+        content: "";
+        display: block;
+
+        width: 35px;
+        height: 3px;
+        background-color: #fff; 
+    }
+
+    &::after {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        
+        content: "";
+        display: block;
+
+        width: 35px;
+        height: 3px;
+        background-color: #fff; 
+    }
+}
+
+.nav__button--close {
+    .nav__button--open {
+        background-color: transparent;
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.mobile__nav {
+    position: fixed;
+    display: none; //display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 0;
+    right: 0;
+    padding: 70px 70px 50px 30px;
+
+    width: 320px;
+    height: 100%;
+    background-color: rgba($color: #0B1D26, $alpha: 0.8);
+
+    .navigation, .account {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+
+    .account {
+        display: flex;
+    }
+}
